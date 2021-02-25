@@ -12,7 +12,7 @@ router.post('/', async (req, res) => {
     password: req.body.password
   })
 
-//res.cookie('userId', userId)
+  res.cookie('userId', userId)
   res.redirect('/')
 })
 
