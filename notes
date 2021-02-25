@@ -1,0 +1,6 @@
+//Authorization vs Authentication:
+
+-Authentication: checking that user is who the say they are - correct password
+-Authorization: Only happens after authentication. What the user is allowed to do.
+
+users are resources - they have a database, etc.
