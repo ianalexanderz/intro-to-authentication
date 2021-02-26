@@ -6,13 +6,22 @@ router.get("/new", async (req, res) => {
   res.render("users/new")
 });
 
+router.get("/login", async (req, res) => {
+  res.render("users/new")
+})
+
+
+router.get("/logout", async (req, res) => {
+  res.redirect("/")
+})
+
 router.post('/', async (req, res) => {
   const user = await models.user.create({
     email: req.body.email,
     password: req.body.password
   })
 
-  res.cookie('userId', userId)
+  //res.cookie('userId', userId)
   res.redirect('/')
 })
 
